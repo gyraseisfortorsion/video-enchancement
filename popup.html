@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter Control</title>
+    <style>
+        body {
+            width: 240px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .filter-control {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .filter-label {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="filter-control">
+        <label for="grayscaleSlider" class="filter-label">Grayscale: <span id="grayscaleValue">0%</span></label>
+        <input type="range" id="grayscaleSlider" min="0" max="100" value="0">
+    </div>
+    <div class="filter-control">
+        <label for="saturationSlider" class="filter-label">Saturation: <span id="saturationValue">100%</span></label>
+        <input type="range" id="saturationSlider" min="0" max="200" value="100">
+    </div>
+    <div class="filter-control">
+        <label for="contrastSlider" class="filter-label">Contrast: <span id="contrastValue">100%</span></label>
+        <input type="range" id="contrastSlider" min="0" max="200" value="100">
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
